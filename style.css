@@ -89,25 +89,27 @@ section > h3 > hr {
 
 .program > ul > li {
     display: flex;
-    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
     gap: 8px;
     padding: 2% 5%;
-    
+    margin: 3%;    
+    background-color: #393c44;
 }
 
 .program > ul > li > span {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 10%;
 }
 
 .program > ul > li > h3 {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 30%;
     color: #ec5242;
 }
 
 .program > ul > li > p {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     width: 60%;
 }
 
