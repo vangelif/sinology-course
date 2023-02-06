@@ -49,13 +49,23 @@ section > h3 > hr {
     padding: 5% 3%;
 }
 
+.intro > .intro-top > p {
+    font-size: 19px;
+}
+
+.intro > .intro-top > h1 {
+  font-weight: 900;
+  font-size: 32px;
+}
+
 .intro > .intro-mid {
     border: 2px solid white;
-    padding: 5% 5%; 
+    padding: 4% 5%; 
 }
 
 .intro > .intro-bottom {
-    padding: 5% 0%;
+    padding: 5%;
+    padding-bottom: 50px;
     
 }
 
@@ -71,11 +81,13 @@ section > h3 > hr {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  height: 980px;
 }
 
 .program > h3 {
     text-align: center;
     padding: 3%;
+    padding-top: 10%;
 }
 /*fixme:amend the hr*/
 .program > h3 > hr {
@@ -92,27 +104,70 @@ section > h3 > hr {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    padding: 2% 5%;
+    padding: 2% 3%;
     margin: 3%;    
     background-color: #393c44;
 }
 
 .program > ul > li > span {
-    /* border: 1px solid red; */
     width: 10%;
 }
 
 .program > ul > li > h3 {
-    /* border: 1px solid green; */
     width: 30%;
     color: #ec5242;
 }
 
 .program > ul > li > p {
-    /* border: 1px solid yellow; */
     width: 60%;
+}
+
+.program > button {
+  color: white;
+  background-color: #ec5242;
+  border: none;
+  width: 70%;
+  height: 70px;
+  align-self: center;
 }
 
 .speakers {
   background-color: white;
+}
+
+.speakers > h3 {
+  text-align: center;
+  padding: 3%;
+}
+
+/*fixme: the hr */
+
+.speaker div { 
+  padding: 2% 4%;
+  width: 69%;
+  clear:both;
+}
+
+.speakers img {
+  height: 100%;
+  width: 29%;
+  float: left;
+  margin: 3% 3%;
+  border: 1px solid yellow;
+}
+
+.speakers .right-side {
+  border: 1px solid red;
+  background-color: red;
+}
+
+.speakers .right-side > p {
+  font-size: 15px;
+  border: 1px solid red;
+}
+
+.speakers .right-side:after {
+  content: "";
+  display: block;
+  clear: both;
 }
