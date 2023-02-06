@@ -1,31 +1,31 @@
 * {
-    font-family: lato, sans-serif;
+  font-family: lato, sans-serif;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 section > hr {
-    height: 2px;
-    width: 25px;
-    border:none;
-    background-color: #ec5242;
+  height: 2px;
+  width: 25px;
+  border: none;
+  background-color: #ec5242;
 }
 
 .intro {
-    background-color: #d3d3d3;
+  background-color: #d3d3d3;
 }
 
 .program {
-    background-color: #272a31;
-    color: white;
+  background-color: #272a31;
+  color: white;
 }
 
 .speakers {
-    background-color: white;
+  background-color: white;
 }
