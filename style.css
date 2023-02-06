@@ -1,5 +1,9 @@
 * {
-  font-family: lato, sans-serif;
+  font-family: Lato, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
 }
 
 li {
@@ -10,20 +14,101 @@ a {
   text-decoration: none;
 }
 
-section > hr {
-  height: 2px;
-  width: 25px;
+i {
+    font-size: 25px;
+}
+
+nav {
+    height: 60px;    
+    background-color: #d3d3d3; 
+}
+
+nav > button {
+    padding-top: 15px;
+    padding-left: 38px;
+    border: none;
+    background-color: #d3d3d3; 
+}
+
+section > h3 > hr {
+  height: 1px;
+  width: 42px;
   border: none;
   background-color: #ec5242;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .intro {
   background-color: #d3d3d3;
+  padding: 3% 5%;
+}
+
+.intro > .intro-top {
+    color:#ec5242;
+    padding: 5% 3%;
+}
+
+.intro > .intro-mid {
+    border: 2px solid white;
+    padding: 5% 5%; 
+}
+
+.intro > .intro-bottom {
+    padding: 5% 0%;
+    
+}
+
+.intro > .intro-bottom > aside {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px 0px 0px 0px;
 }
 
 .program {
   background-color: #272a31;
   color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.program > h3 {
+    text-align: center;
+    padding: 3%;
+}
+/*fixme:amend the hr*/
+.program > h3 > hr {
+    margin-bottom: 10px;
+}
+
+.program > ul {
+    padding: 2% 4%;
+    gap: 50px;
+}
+
+.program > ul > li {
+    display: flex;
+    border: 1px solid white;
+    gap: 8px;
+    padding: 2% 5%;
+    
+}
+
+.program > ul > li > span {
+    border: 1px solid red;
+    width: 10%;
+}
+
+.program > ul > li > h3 {
+    border: 1px solid green;
+    width: 30%;
+    color: #ec5242;
+}
+
+.program > ul > li > p {
+    border: 1px solid yellow;
+    width: 60%;
 }
 
 .speakers {
