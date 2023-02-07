@@ -30,9 +30,9 @@ nav > button {
     background-color: #d3d3d3; 
 }
 
-section > h3 > hr {
+section > hr {
   height: 1px;
-  width: 42px;
+  width: 33px;
   border: none;
   background-color: #ec5242;
   text-align: center;
@@ -85,13 +85,8 @@ section > h3 > hr {
 }
 
 .program > h3 {
-    text-align: center;
-    padding: 3%;
-    padding-top: 10%;
-}
-/*fixme:amend the hr*/
-.program > h3 > hr {
-    margin-bottom: 10px;
+    text-align: center;    
+    padding-top: 8%;
 }
 
 .program > ul {
@@ -133,36 +128,63 @@ section > h3 > hr {
 
 .speakers {
   background-color: white;
+  
 }
 
 .speakers > h3 {
   text-align: center;
   padding: 3%;
+
 }
 
+.speaker-container {
+  display: flex;
+  justify-content: center;
+  
+}
 /*fixme: the hr */
 
-.speaker div { 
-  padding: 2% 4%;
-  width: 69%;
-  clear:both;
+.speakers img {
+  height: 120px;
+  width: 120px;
+  padding: 2% 2%;
 }
 
-.speakers img {
-  height: 100%;
-  width: 29%;
-  float: left;
-  margin: 3% 3%;
-  border: 1px solid yellow;
+.speaker {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 22%;
+
 }
+
+.speaker > .img-two {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px solid red;
+}
+
+.speaker > .img-one {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  border: 1px solid green;
+  z-index: 1;
+}
+
+
 
 .speakers .right-side {
-  border: 1px solid red;
-  background-color: red;
+  border: 1px solid red;  
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 65%;  
 }
 
 .speakers .right-side > p {
-  font-size: 15px;
+  font-size: 13px;
   border: 1px solid red;
 }
 

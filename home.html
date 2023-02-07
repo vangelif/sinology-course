@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
-    <title>Vangelis' Sinology Course</title>
+    <title>Home: Sinology Course</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
@@ -20,6 +20,7 @@
 <body>  
     <header>
         <nav>
+            <!--todo:popup menu appears with X button as well-->
             <button>
             <i class="fa-solid fa-bars"></i>
             </button>
@@ -41,11 +42,10 @@
     </section>
 <!-- main program -->
     <section class="program">
-        <!--FIXME: check again the h3 and the hr-->
-        <h3>Main Program<br><hr></h3>        
+        <h3>Main Program</h3>
+        <hr>        
         <ul>
             <!--todo: find images -->
-            <!--todo: decide flex or grid-->
             <li>
                 <span><i class="fa-solid fa-chalkboard-user"></i></span>
                 <h3>Lecture</h3>
@@ -78,24 +78,26 @@
     </section>
 <!-- speakers -->
     <section class="speakers">
+        <!--todo: use of JS: speakersObject: when page loads to create the section dynamically-->
         <h3>Feautured Speakers</h3>
         <hr>
         <!--todo: consider ul li?-->
-        <div>
-            <img src="images/face1.jpg">
-           
-            <div class="right-side">
-                <h4>Yochai Benkler</h4>
-                <p>Berkman Professor of Enterpreneurial Legal Studies at Harvard Law School</p>
-                <hr>
-                <p>Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.</p>
-           
+        <div class="speaker-container">
+            <div class="speaker">
+                <img class="img-one" src="images/speakers/face1.jpg">                     
+                <img class="img-two" src="images/speakers/image-bg.png"> 
             </div>
-        </div>
+            <div class="right-side">
+                    <h4>Yochai Benkler</h4>
+                    <p style="color: #ec5242">Berkman Professor of Enterpreneurial Legal Studies at Harvard Law School</p>
+                    <hr>
+                    <p>Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.</p>           
+            </div>     
+        </div>   
         <div>
             <!--todo: find images -->
-                <image></image>
-                <div>
+                
+                <!-- <div>
                     <h4>SohYeong Noh</h4>
                     <p></p>
                     <hr>
@@ -104,7 +106,7 @@
             </div>
             <button>
                 <p><a href="">MORE<i> symbol</i></a></p>
-            </button>
+            </button> -->
     </section>
 </body>
 </html>
