@@ -15,19 +15,7 @@ a {
 }
 
 i {
-    font-size: 25px;
-}
-
-nav {
-    height: 60px;    
-    background-color: #d3d3d3; 
-}
-
-nav > button {
-    padding-top: 15px;
-    padding-left: 38px;
-    border: none;
-    background-color: #d3d3d3; 
+  font-size: 25px;
 }
 
 section > hr {
@@ -40,39 +28,55 @@ section > hr {
 }
 
 .intro {
-  background-color: #d3d3d3;
   padding: 3% 5%;
+  background-image: url(images/intro/home-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+/*fixme: make the button's background invisible*/
+.intro button {
+  padding: 1% 2% 10% 2%;
+  border: none;
 }
 
 .intro > .intro-top {
-    color:#ec5242;
-    padding: 5% 3%;
+  color: #ec5242;
+  padding: 5% 3%;
 }
 
 .intro > .intro-top > p {
-    font-size: 19px;
+  font-size: 19px;
 }
 
 .intro > .intro-top > h1 {
   font-weight: 900;
   font-size: 32px;
+  background-image: url(images/intro/header\ background.jpeg);
+  background-size: 100% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
 }
 
 .intro > .intro-mid {
-    border: 2px solid white;
-    padding: 4% 5%; 
+  border: 2px solid white;
+  padding: 4% 5%;
+  background-color: #d3d3d3;
 }
 
 .intro > .intro-bottom {
-    padding: 5%;
-    padding-bottom: 50px;
-    
+  padding: 5%;
+  padding-bottom: 50px;
 }
 
 .intro > .intro-bottom > aside {
-    font-size: 15px;
-    font-weight: 400;
-    padding: 5px 0px 0px 0px;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px 0px 0px 0px;
 }
 
 .program {
@@ -82,39 +86,43 @@ section > hr {
   flex-direction: column;
   gap: 20px;
   height: 980px;
+  background-image: url(images/program/diamond.png);
+  background-repeat: repeat;
+  background-position: center;
+  width: 100%;
 }
 
 .program > h3 {
-    text-align: center;    
-    padding-top: 8%;
+  text-align: center;
+  padding-top: 8%;
 }
 
 .program > ul {
-    padding: 2% 4%;
-    gap: 50px;
+  padding: 2% 4%;
+  gap: 50px;
 }
 
 .program > ul > li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    padding: 2% 3%;
-    margin: 3%;    
-    background-color: #393c44;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 2% 3%;
+  margin: 3%;
+  background-color: #393c44;
 }
 
 .program > ul > li > span {
-    width: 10%;
+  width: 10%;
 }
 
 .program > ul > li > h3 {
-    width: 30%;
-    color: #ec5242;
+  width: 30%;
+  color: #ec5242;
 }
 
 .program > ul > li > p {
-    width: 60%;
+  width: 60%;
 }
 
 .program > button {
@@ -128,19 +136,18 @@ section > hr {
 
 .speakers {
   background-color: white;
-  
+  outline: auto;
 }
 
 .speakers > h3 {
   text-align: center;
   padding: 3%;
-
 }
 
 .speaker-container {
   display: flex;
   justify-content: center;
-  
+  outline: auto;
 }
 /*fixme: the hr */
 
@@ -148,6 +155,7 @@ section > hr {
   height: 120px;
   width: 120px;
   padding: 2% 2%;
+  outline: auto;
 }
 
 .speaker {
@@ -155,7 +163,7 @@ section > hr {
   top: 0;
   left: 0;
   width: 22%;
-
+  outline: auto;
 }
 
 .speaker > .img-two {
@@ -173,14 +181,12 @@ section > hr {
   z-index: 1;
 }
 
-
-
 .speakers .right-side {
-  border: 1px solid red;  
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   gap: 7px;
-  width: 65%;  
+  width: 65%;
 }
 
 .speakers .right-side > p {
