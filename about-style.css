@@ -57,6 +57,18 @@ footer .right-side {
   font-weight: 350;
 }
 
+.topbar {
+  display: none;
+}
+
+.navigation {
+  display: none;
+}
+
+#mobile-menu {
+  display: none;
+}
+
 .intro {
   padding: 3% 5%;
   text-align: center;
@@ -76,6 +88,7 @@ footer .right-side {
   padding-top: 10px;
   display: flex;
   align-self: flex-start;
+  cursor: pointer;
 }
 
 .intro > .intro-top {
@@ -118,29 +131,27 @@ footer .right-side {
 }
 
 .current h3 {
-  padding: 5% 3%;
+  padding: 2% 3%;
 }
 
 .current > p {
-  padding: 5% 8%;
+  padding: 2% 8%;
   font-weight: 400;
   font-size: 12px;
 }
 
 .current img {
   width: 400px;
-  padding: 5% 3%;
+  padding: 2% 3%;
   height: 450px;
   opacity: 35%;
-  padding-bottom: 12%;
+  padding-bottom: 8%;
   position: relative;
 
 }
 
 .current div {
   position: relative;
-  /* padding: 1% 1%; */
-  /* margin: 2% 15%; */
 }
 
 .current div h5 {
@@ -160,6 +171,13 @@ footer .right-side {
 
 .current div h5 span {
   color: #ec5242;
+}
+
+.current div i {
+  position: absolute;
+  top: 120px;
+  left: 190px;
+
 }
 
 .past {
@@ -274,11 +292,105 @@ footer .right-side {
 
 @media screen and (min-width: 768px) {
 
+  .topbar {
+    display: flex;
+    gap: 22px;
+    width: 100%;
+    padding: 0.6% 2%;
+    justify-content: flex-end;
+    align-content: center;
+    background-color:#393c44;
+  }
+
+  .topbar a {
+    color: white;
+    font-size: 15px;
+  }
+
+  .topbar a i {
+    font-size: 15px;
+  }
+
+  .navigation {
+    display: block;
+  }
+
+  .navigation div {
+    display: flex;  
+    padding: 1.8% 5%;
+  }
+
+  .navigation div a {
+    color: #393c44;    
+  }
+
+  .navigation div #logo {
+    width: 30px;
+    height: 40px;
+  }
+  .navigation div ul {
+    display: flex;
+    gap: 35px;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .navigation div ul button {
+    background-color: transparent;
+    border: 4px solid #ec5242;
+    color: #ec5242;
+    font-weight: 600;
+    margin: 0.5% 0.5%;
+    padding: 1% 1%;
+    width: 90px;
+    height: 40px;
+  }
+
+  .intro {
+    padding: 1% 5%;
+    text-align: center;
+    background-image: url(images/intro/home-bg-desk.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
   .intro button i {
     display: none;
   }
+
+  .current {
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .current img {
+    position: relative;
+    width: 80%;
+  }
+  
+  .current div h5 {
+    position: absolute;
+    top: 80px;
+    left: 110px;
+    margin: 0 auto;
+    letter-spacing: 0.4cap;
+    width: 75%;
+    font-weight: 550;
+    color: black;
+  } 
+
   .past {
     background-color: white;
+    text-align: center;
+    padding: 1% 8%;
+    height: 60vh;
   }
   .past-container {
     display: flex;

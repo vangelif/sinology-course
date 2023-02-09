@@ -23,22 +23,59 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@1,900&display=swap"
       rel="stylesheet"
     />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header>
-      <nav>
-        <!--todo:popup menu appears with X button as well-->
-      </nav>
+      <div class="topbar">
+        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href="">Logout</a>
+        <a href="">Contact</a>
+        <a href="">Blog</a>
+    </div>
+    <nav class="navigation">
+        <div>
+          <a id="logo" href="home.html"><i class='fas fa-bullseye'></i></a> 
+          <ul class="desktopnav">
+            <a id="activelink" href="./home.html">
+                <li>Home</li>
+            </a>
+            <a href="./about.html">
+                <li>About</li>
+            </a>
+            <a href="">
+                <li>Sponsor</li>
+            </a>
+            <a href="">
+                <li>News</li>
+            </a>
+            <a href=""><button type="button">Join Now</button></a>
+        </ul>
+    </div>
+    </nav>
     </header>
+    <div id="mobile-menu">
+      <div id="close">
+          <i class="fa-solid fa-xmark"></i>            
+      </div>       
+      <ul>
+          <li><a id="homelink" href="home.html"> Home</a></li>
+          <li><a id="aboutlink" href="about.html"> About</a></li>
+          <li><a id="sponsorlink" href="#"> Sponsor</a></li>
+          <li><a id="newslink" href="#"> News</a></li>
+      </ul>
+  </div>
     <!-- intro -->
     <section class="intro">
-      <button>
+      <button id="hamburgerBtn">
         <i class="fa-solid fa-bars"></i>
       </button>
       <div class="intro-top">
         <p>"Hello! Sharing World"</p>
         <h1>
-          CREATIVE COMMONS<br />
+          SINOLOGY COMMONS<br />
           GLOBAL SUMMIT 2015
         </h1>
       </div>
@@ -53,7 +90,7 @@
           Please contact us per Email for any further questions about CC Global
           Summit 2015!
         </p>
-        <aside><strong>ccsummit2015@cckorea.org</strong></aside>
+        <aside><strong>scsummit2015@scchina.org</strong></aside>
       </div>
     </section>
 
@@ -63,12 +100,12 @@
       <hr />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quo
-        rem ipsum maxime! Omnis, fugit.
+        rem ipsum maxime! Omnis, fugit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas recusandae illo laborum eaque? Voluptatem, saepe? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
       </p>
-<!--fixme: check the width of the img-->
         <div>
           <img src="images/current/door.jpg" />      
           <h5>Enter the <span>2023</span> Field S<span>umm</span>it</h5>
+          
         </div>
       
       <div><hr /></div>
@@ -76,7 +113,7 @@
     <!--past summits-->
     <section class="past">
       <!-- <div class="past-container"> -->
-      <h3>See the past CC Summits<br /></h3>
+      <h3>See the past SC Summits<br /></h3>
       <hr />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur.
@@ -85,13 +122,13 @@
         <div class="past-item-1">
           <img src="images/past-events/shanghai.jpg" />
           <h2>2013</h2>
-          <p>CC Global Summit 2013 in Shanghai</p>
+          <p>SC Global Summit 2013 in Shanghai</p>
         </div>
 
         <div class="past-item-2">
           <img src="images/past-events/beijing.jpg" />
           <h2>2011</h2>
-          <p>CC Global Summit 2013 in Beijing</p>
+          <p>SC Global Summit 2013 in Beijing</p>
         </div>
 
     </div>
@@ -114,9 +151,9 @@
     <footer>
       <div class="left-side">
         <i class='fas fa-bullseye'> </i>
-        <aside> creative<br> commons korea</aside>
+        <aside> sinology<br> commons korea</aside>
       </div>
-      <div class="right-side">2015 Creative Commons Korea.<br>Some rights reserved.</div>
+      <div class="right-side">2015 Sinology Commons China.<br>Some rights reserved.</div>
     </footer>
   </body>
 </html>
