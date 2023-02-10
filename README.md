@@ -60,7 +60,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- <a href="https://vangelif.github.io/sinology-course/index.html">Check out the live demo</a> 
+- <a href="https://vangelif.github.io/sinology-course/">Check out the live demo</a> 
 
 - <a href="">Check out the live video</a> 
 

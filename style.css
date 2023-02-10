@@ -65,6 +65,10 @@ footer {
   padding: 5% 3%;
 }
 
+.program > ul > li > p {
+  width: 60%;
+}
+
 .intro > .intro-top > p {
   font-size: 19px;
 }
@@ -76,8 +80,6 @@ footer {
   background-size: 100% 100%;
   color: transparent;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -o-background-clip: text;
 }
 
 .intro > .intro-mid {
@@ -94,7 +96,7 @@ footer {
 .intro > .intro-bottom > aside {
   font-size: 15px;
   font-weight: 400;
-  padding: 5px 0px 0px 0px;
+  padding: 5px 0.01px 0.01px 0.01px;
 }
 
 .program {
@@ -141,10 +143,24 @@ footer {
 
 .program > ul > li > span {
   width: 10%;
-  
+}
+
+.speakers div button i {
+  font-size: 16px;
+  color: #ec5242;
 }
 
 .program > ul > li > span > i {
+  font-size: 25px;
+}
+
+.partner h3 {
+  font-size: 25px;
+}
+
+.speakers > h3 {
+  text-align: center;
+  padding: 3%;
   font-size: 25px;
 }
 
@@ -153,8 +169,17 @@ footer {
   color: #ec5242;
 }
 
-.program > ul > li > p {
-  width: 60%;
+.speakers button {
+  width: 90vw;
+  margin: 5% 5%;
+  padding: 3% 1%;
+  border: 2px solid #d3d3d3;
+}
+
+.speakers div button {
+  background-color: transparent;
+  font-size: 13px;
+  text-align: center;
 }
 
 .program > ul > li > button {
@@ -171,13 +196,7 @@ footer {
   margin-top: 50px;
 }
 
-.speakers > h3 {
-  text-align: center;
-  padding: 3%;
-  font-size: 25px;
-}
-
-.speakers > hr {  
+.speakers > hr {
   height: 1px;
   width: 33px;
   border: none;
@@ -190,14 +209,14 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding: 0% 3%; 
+  padding: 0% 3%;
   margin-top: 20px;
 }
 
 .speaker-item {
   display: flex;
   flex-direction: row;
-  width: 100%;  
+  width: 100%;
   gap: 50px;
 }
 
@@ -213,10 +232,10 @@ footer {
   flex: 1;
 }
 
- .speaker > .img-two {
+.speaker > .img-two {
   position: relative;
   top: 0;
-  left: 0; 
+  left: 0;
 }
 
 .speaker > .desktop-img {
@@ -234,7 +253,7 @@ footer {
 
 .speakers .right-side {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   gap: 10px;
   width: 100%;
   margin: 0.3% 0.7%;
@@ -247,25 +266,11 @@ footer {
 
 .speaker-item .right-side hr {
   width: 20px;
-  background-color:#d3d3d3;
-  
+  background-color: #d3d3d3;
 }
 
 .speaker-item .right-side div p {
   font-size: 10px;
-}
-
-.speakers button {
-  width: 90vw;
-  margin: 5% 5%;
-  padding: 3% 1%;
-  border: 2px solid #d3d3d3;
-}
-
-.speakers div button {
-  background-color: transparent;
-  font-size: 13px;
-  text-align: center;  
 }
 
 .speakers div button a {
@@ -273,21 +278,11 @@ footer {
   font-weight: 400;
 }
 
-.speakers div button i {
-  font-size: 16px;
-  color: #ec5242;
-} 
-
 .partner {
   display: none;
 }
 
-.partner h3 {
-  font-size: 25px;
-}
-
 @media screen and (min-width: 768px) {
- 
   .topbar {
     display: flex;
     gap: 22px;
@@ -295,7 +290,7 @@ footer {
     padding: 0.6% 2%;
     justify-content: flex-end;
     align-content: center;
-    background-color:#393c44;
+    background-color: #393c44;
   }
 
   .topbar a {
@@ -312,8 +307,18 @@ footer {
   }
 
   .navigation div {
-    display: flex;  
+    display: flex;
     padding: 1.8% 5%;
+  }
+
+  .program > a {
+    text-decoration: underline;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    margin: 3%;
+    font-size: 18px;
+    display: block;
   }
 
   .navigation div a {
@@ -324,12 +329,28 @@ footer {
     width: 30px;
     height: 40px;
   }
+
+  .program > ul {
+    padding: 2% 2%;
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+  }
+
   .navigation div ul {
     display: flex;
     gap: 35px;
     width: 100%;
     justify-content: flex-end;
     align-items: center;
+  }
+
+  .speakers button {
+    display: none;
+  }
+
+  .intro button {
+    display: none;
   }
 
   .navigation div ul button {
@@ -353,10 +374,6 @@ footer {
     height: 100%;
   }
 
-  .intro button {
-    display: none;
-  }
-
   .program {
     background-color: #272a31;
     color: white;
@@ -376,13 +393,6 @@ footer {
     padding-top: 0;
   }
 
-  .program > ul {
-    padding: 2% 2%;
-    gap: 5px;
-    display: flex;
-    flex-direction: row;
-  }
-
   .program > ul > li {
     display: flex;
     flex-direction: column;
@@ -391,14 +401,15 @@ footer {
     gap: 10px;
     padding: 1% 1%;
     margin: 0 auto;
-    background-color: #393c44;  
-    width: 25%;  
+    background-color: #393c44;
+    width: 25%;
   }
 
-  .program > ul > li:nth-child(6) {
-    display: none;
+  .partner > h3 {
+    padding: 3% 2%;
+    color: white;
   }
-  
+
   .program > ul > li > h3 {
     width: 100%;
     text-align: center;
@@ -409,27 +420,13 @@ footer {
     text-align: center;
   }
 
-  .program > a {
-    text-decoration: underline;
-    color: white;
-    text-align: center;
-    padding: 2%;
-    margin: 3%;
-    font-size: 18px;
-    display: block;
-  }
-
   .speaker-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
-   .speakers button {
-    display: none;
-  }
-
   .speaker > .img-two {
-   display: none;
+    display: none;
   }
 
   .speaker > .desktop-img {
@@ -444,16 +441,10 @@ footer {
     color: black;
     text-align: center;
     width: 100%;
-    height: fit-content;  
     margin-top: 5rem;
     display: block;
   }
-  
-  .partner h3 {
-    padding: 3% 2%;
-    color: white;
-  }
-  
+
   .partner div ul {
     padding: 7% 10%;
     width: 100%;
@@ -463,37 +454,45 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
-  .partner div ul li {
+
+  .partner > div > ul > li {
     color: white;
     margin: 0% 1%;
     padding: 1% 1%;
   }
 
-  .partner div ul li:nth-child(1){
+  .program > ul > li:nth-child(6) {
+    display: none;
+  }
+
+  .partner div ul li:nth-child(1) {
     color: white;
     font-weight: 700;
-    font-family: chirp, sans-serif;
-  }    
-  .partner div ul li:nth-child(2){
-    color: white;
-    font-size: 200;
-    font-family: Myriad, sans-serif;
+    font-family: sans-serif;
   }
-  .partner div ul li:nth-child(3){
+
+  .partner div ul li:nth-child(2) {
+    color: white;
+    font-weight: 200;
+    font-family: sans-serif;
+  }
+
+  .partner div ul li:nth-child(3) {
     color: #d3d3d3;
     font-weight: bolder;
- 
-    font-style: helvetica, sans-serif;
   }
-  .partner div ul li:nth-child(4){
+
+  .partner div ul li:nth-child(4) {
     color: white;
-    font-style: open-sans, sans-serif; 
   }
-  .partner div ul li:nth-child(5){
+
+  .partner div ul li:nth-child(5) {
     color: white;
-    font-size: 200;
-    font-style: droidfont, sans-serif;
+    font-weight: 200;
+  }
+
+  footer > .left-side > i {
+    font-size: 18px;
   }
 
   .partner div ul li i {
@@ -512,23 +511,16 @@ footer {
     height: 80px;
     padding: 2% 5%;
   }
-  
-  footer .left-side i {
-    font-size: 18px;  
-  }
-  
+
   footer .left-side aside {
     font-size: 17px;
     font-weight: 700;
-    float:right;
+    float: right;
     line-height: 60%;
-    letter-spacing: -0.05cap;
-    
   }
-  
+
   footer .right-side {
     font-size: 9px;
     font-weight: 350;
   }
-  
- }
+}

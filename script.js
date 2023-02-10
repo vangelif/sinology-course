@@ -3,8 +3,6 @@ const closeBtn = document.getElementById('close');
 const mobileMenu = document.getElementById('mobile-menu');
 const speakers = document.getElementById('speaker-container');
 
-// todo: add event listeners for more button
-
 hamburgerBtn.addEventListener('click', () => {
   if (mobileMenu.style.display === 'none') {
     mobileMenu.style.display = 'block';
@@ -56,7 +54,7 @@ const speakersObj = [
     image: 'images/speakers/female3.jpg',
     job_post:
       'Berkman Professor of Enterpreneurial Legal Studies at Harvard Law School',
-      bio:
+    bio:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto tenlaborum dt dolorem. Distinctio fugiat iusto ad corrupti maxime officia? Benkler studies cod his seminal book The Wealth of Networks in 2006.',
   },
   {
@@ -69,9 +67,8 @@ const speakersObj = [
   },
 ];
 
-for (let i = 0; i < speakersObj.length; i++) {
+for (let i = 0; i < speakersObj.length; i += 1) {
   speakers.innerHTML += `
-
   <div class="speaker-item">
     <div class="speaker">
                 <img class="desktop-img" src="images/speakers/image-bg-desk.png">

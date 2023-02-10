@@ -29,27 +29,22 @@ section > hr {
 
 footer {
   background-color: white;
-  /* text-align: left; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center center;
-  /* grid-gap: 60px; */
   height: 80px;
   padding: 2% 5%;
 }
 
 footer .left-side i {
   font-size: 18px;
-
 }
 
 footer .left-side aside {
   font-size: 17px;
   font-weight: 700;
-  float:right;
+  float: right;
   line-height: 60%;
-  letter-spacing: -0.05cap;
-  
 }
 
 footer .right-side {
@@ -96,6 +91,27 @@ footer .right-side {
   padding: 10% 3% 10% 3%;
 }
 
+.current > p {
+  padding: 2% 8%;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.past > p {
+  padding: 3% 2% 6% 2%;
+  font-weight: 350;
+  font-size: 13px;
+}
+
+.past > div p {
+  position: absolute;
+  top: 135px;
+  left: 75px;
+  font-weight: 550;
+  margin: 0 auto;
+  color: white;
+}
+
 .intro > .intro-top > p {
   font-size: 19px;
 }
@@ -120,7 +136,7 @@ footer .right-side {
 .intro > .intro-bottom > aside {
   font-weight: 500;
   text-decoration: underline;
-  padding: 5px 0px 0px 0px;
+  padding: 5px 0.01px 0.01px 0.01px;
 }
 
 .current {
@@ -134,12 +150,6 @@ footer .right-side {
   padding: 2% 3%;
 }
 
-.current > p {
-  padding: 2% 8%;
-  font-weight: 400;
-  font-size: 12px;
-}
-
 .current img {
   width: 400px;
   padding: 2% 3%;
@@ -147,7 +157,6 @@ footer .right-side {
   opacity: 35%;
   padding-bottom: 8%;
   position: relative;
-
 }
 
 .current div {
@@ -159,13 +168,12 @@ footer .right-side {
   top: 80px;
   left: 70px;
   margin: 0 auto;
-  letter-spacing: 0.4cap;
   width: 75%;
   font-weight: 550;
   color: black;
 }
 
-.current div h5:first-letter {
+.current div h5::first-letter {
   color: #ec5242;
 }
 
@@ -177,7 +185,6 @@ footer .right-side {
   position: absolute;
   top: 120px;
   left: 190px;
-
 }
 
 .past {
@@ -190,7 +197,7 @@ footer .right-side {
 .past-container {
   display: flex;
   flex-direction: column;
-  gap: 1rem;  
+  gap: 1rem;
 }
 
 .past h3 {
@@ -203,26 +210,19 @@ footer .right-side {
   text-align: center;
 }
 
-.past > p {
-  padding: 3% 2% 6% 2%;
-  font-weight: 350;
-  font-size: 13px;
-}
-
 .past div {
   margin: 0 auto;
   height: 250px;
   width: 360px;
-
   position: relative;
 }
 
 .past .past-item-1 {
-     background-color: #ec5242; 
+  background-color: #ec5242;
 }
 
 .past .past-item-2 {
-  background-color: #ec5242; 
+  background-color: #ec5242;
 }
 
 .past div img {
@@ -241,16 +241,7 @@ footer .right-side {
   font-weight: 800;
 }
 
-.past > div p {
-  position: absolute;
-  top: 135px;
-  left: 75px;
-  font-weight: 550;
-  margin: 0 auto;
-  color: white;
-}
-
-.past .abc:after {
+.past .abc::after {
   content: "";
   display: block;
   clear: both;
@@ -261,7 +252,6 @@ footer .right-side {
   color: black;
   text-align: center;
   width: 100%;
-  height: fit-content;  
   margin-top: 5rem;
 }
 
@@ -291,7 +281,6 @@ footer .right-side {
 }
 
 @media screen and (min-width: 768px) {
-
   .topbar {
     display: flex;
     gap: 22px;
@@ -299,7 +288,7 @@ footer .right-side {
     padding: 0.6% 2%;
     justify-content: flex-end;
     align-content: center;
-    background-color:#393c44;
+    background-color: #393c44;
   }
 
   .topbar a {
@@ -316,18 +305,19 @@ footer .right-side {
   }
 
   .navigation div {
-    display: flex;  
+    display: flex;
     padding: 1.8% 5%;
   }
 
   .navigation div a {
-    color: #393c44;    
+    color: #393c44;
   }
 
   .navigation div #logo {
     width: 30px;
     height: 40px;
   }
+
   .navigation div ul {
     display: flex;
     gap: 35px;
@@ -374,17 +364,16 @@ footer .right-side {
     position: relative;
     width: 80%;
   }
-  
+
   .current div h5 {
     position: absolute;
     top: 80px;
     left: 110px;
     margin: 0 auto;
-    letter-spacing: 0.4cap;
     width: 75%;
     font-weight: 550;
     color: black;
-  } 
+  }
 
   .past {
     background-color: white;
@@ -392,12 +381,12 @@ footer .right-side {
     padding: 1% 8%;
     height: 60vh;
   }
+
   .past-container {
     display: flex;
     flex-direction: row;
     place-content: center center;
-    /* background-color: transparent; */
-    gap: 2rem;  
+    gap: 2rem;
     margin: 0 auto;
   }
 
@@ -414,5 +403,4 @@ footer .right-side {
   footer .right-side {
     text-align: start;
   }
-
 }
