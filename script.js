@@ -5,7 +5,8 @@ const speakers = document.getElementById('speaker-container');
 
 hamburgerBtn.addEventListener('click', () => {
   if (mobileMenu.style.display === 'none') {
-    mobileMenu.style.display = 'block';
+    mobileMenu.style.display = 'flex';
+    hamburgerBtn.style.display = 'none';
   } else {
     mobileMenu.style.display = 'none';
   }
@@ -13,6 +14,7 @@ hamburgerBtn.addEventListener('click', () => {
 
 closeBtn.addEventListener('click', () => {
   mobileMenu.style.display = 'none';
+  hamburgerBtn.style.display = 'block';
 });
 
 // Object starts here

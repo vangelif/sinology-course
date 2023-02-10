@@ -41,6 +41,72 @@ footer {
 
 #mobile-menu {
   display: none;
+  flex-direction: column;
+  width: 90%;
+}
+
+.program > ul {
+  padding: 2% 4%;
+  gap: 50px;
+}
+
+#mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 10px;
+  padding: 3% 3%;
+  justify-content: space-around;
+}
+
+.program > a {
+  display: none;
+}
+
+.program > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 2% 3%;
+  margin: 3%;
+  background-color: #393c44;
+}
+
+.program > ul > li:last-child {
+  background-color: transparent;
+}
+
+#mobile-menu ul li {
+  width: fit-content;
+  padding: 2% 2%;
+}
+
+.speakers div button a {
+  color: black;
+  font-weight: 400;
+}
+
+#mobile-menu ul li a {
+  color: #393c44;
+}
+
+#mobile-menu ul li:last-child a {
+  color: #ec5242;
+}
+
+#mobile-menu ul li:last-child {
+  border: 3px solid #ec5242;
+}
+
+#close {
+  width: fit-content;
+  align-self: flex-end;
+  padding: 3% 3%;
+}
+
+#hamburgerBtn {
+  display: block;
 }
 
 .intro {
@@ -116,29 +182,6 @@ footer {
   text-align: center;
   padding-top: 8%;
   font-size: 25px;
-}
-
-.program > ul {
-  padding: 2% 4%;
-  gap: 50px;
-}
-
-.program > a {
-  display: none;
-}
-
-.program > ul > li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  padding: 2% 3%;
-  margin: 3%;
-  background-color: #393c44;
-}
-
-.program > ul > li:last-child {
-  background-color: transparent;
 }
 
 .program > ul > li > span {
@@ -271,11 +314,6 @@ footer {
 
 .speaker-item .right-side div p {
   font-size: 10px;
-}
-
-.speakers div button a {
-  color: black;
-  font-weight: 400;
 }
 
 .partner {

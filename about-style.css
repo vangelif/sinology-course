@@ -52,15 +52,68 @@ footer .right-side {
   font-weight: 350;
 }
 
+#mobile-menu {
+  display: none;
+  flex-direction: column;
+  width: 90%;
+}
+
+.partner div ul {
+  padding: 7% 10%;
+  width: 100%;
+  gap: 13px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.partner div ul li {
+  color: white;
+}
+
+#mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 10px;
+  padding: 3% 3%;
+  justify-content: space-around;
+}
+
+#mobile-menu ul li {
+  width: fit-content;
+  padding: 2% 2%;
+}
+
+#mobile-menu ul li a {
+  color: #393c44;
+}
+
+#mobile-menu ul li:last-child {
+  border: 3px solid #ec5242;
+}
+
+#mobile-menu ul li:last-child a {
+  color: #ec5242;
+}
+
+#close {
+  width: fit-content;
+  align-self: flex-end;
+  padding: 3% 3%;
+}
+
+#hamburgerBtn {
+  display: block;
+  width: fit-content;
+}
+
 .topbar {
   display: none;
 }
 
 .navigation {
-  display: none;
-}
-
-#mobile-menu {
   display: none;
 }
 
@@ -257,20 +310,6 @@ footer .right-side {
 
 .partner h3 {
   padding: 3% 2%;
-  color: white;
-}
-
-.partner div ul {
-  padding: 7% 10%;
-  width: 100%;
-  gap: 13px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.partner div ul li {
   color: white;
 }
 
