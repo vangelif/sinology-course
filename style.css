@@ -141,6 +141,11 @@ footer {
 
 .program > ul > li > span {
   width: 10%;
+  
+}
+
+.program > ul > li > span > i {
+  font-size: 25px;
 }
 
 .program > ul > li > h3 {
