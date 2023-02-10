@@ -116,7 +116,6 @@ footer {
   background-size: 100% 100%;
   background-position: center;
   width: 100%;
-  height: 100%;
 }
 
 .intro button {
@@ -171,7 +170,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 980px;
   background-image: url(images/program/diamond.png);
   background-repeat: repeat;
   background-position: center;
@@ -180,7 +178,7 @@ footer {
 
 .program > h3 {
   text-align: center;
-  padding-top: 8%;
+  padding-top: 20px;
   font-size: 25px;
 }
 
@@ -230,7 +228,6 @@ footer {
   background-color: #ec5242;
   border: none;
   width: 85%;
-  height: 65px;
   align-self: center;
 }
 
@@ -264,12 +261,14 @@ footer {
 }
 
 .speakers img {
-  height: 120px;
+  /* height: 120px; */
+  aspect-ratio: auto;
   width: 120px;
 }
 
 .speaker {
-  height: 110px;
+  /* height: 110px; */
+  aspect-ratio: auto;
   position: relative;
   width: 20%;
   flex: 1;
@@ -286,7 +285,8 @@ footer {
 }
 
 .speaker > .img-one {
-  height: 90px;
+  /* height: 90px; */
+  aspect-ratio: auto;
   width: 90px;
   position: absolute;
   top: 12px;
@@ -321,6 +321,10 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  #hamburgerBtn {
+    display: none;
+  }
+
   .topbar {
     display: flex;
     gap: 22px;
@@ -409,7 +413,18 @@ footer {
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+  }
+
+  .intro > .intro-mid {
+    border: 2px solid white;
+    padding: 3% 5%;
+    background-color: #d3d3d3;
+  }
+
+  .intro > .intro-bottom {
+    padding: 3%;
+    padding-bottom: 50px;
   }
 
   .program {
@@ -419,7 +434,6 @@ footer {
     flex-direction: column;
     gap: 30px;
     place-content: center center;
-    height: 80vh;
     background-image: url(images/program/diamond.png);
     background-repeat: repeat;
     background-position: center;
@@ -428,7 +442,7 @@ footer {
 
   .program > h3 {
     font-size: 28px;
-    padding-top: 0;
+    padding-top: 20px;
   }
 
   .program > ul > li {
@@ -441,6 +455,19 @@ footer {
     margin: 0 auto;
     background-color: #393c44;
     width: 25%;
+  }
+
+  .partner > div > ul > li {
+    color: white;
+    margin: 0% 1%;
+    padding: 1% 1%;
+  }
+
+  .program > ul > li:hover {
+    transform: scale(1.03);
+    transition: all 0.6s ease-out;
+    border: 5px solid #ec5242;
+    border-radius: 2%;
   }
 
   .partner > h3 {
@@ -493,12 +520,6 @@ footer {
     justify-content: center;
   }
 
-  .partner > div > ul > li {
-    color: white;
-    margin: 0% 1%;
-    padding: 1% 1%;
-  }
-
   .program > ul > li:nth-child(6) {
     display: none;
   }
@@ -546,7 +567,6 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     place-items: center center;
     grid-gap: 25px;
-    height: 80px;
     padding: 2% 5%;
   }
 
