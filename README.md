@@ -62,7 +62,7 @@
 
 - <a href="https://vangelif.github.io/sinology-course/">Check out the live demo</a> 
 
-- <a href="https://bit.ly/3RRO5Ec">Check out the live video</a> 
+- <a href="https://bit.ly/40MpSD5">Check out the live video</a> 
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
