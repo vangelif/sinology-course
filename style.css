@@ -253,6 +253,14 @@ footer {
   margin-top: 20px;
 }
 
+.displayed {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
 .speaker-item {
   display: flex;
   flex-direction: row;
@@ -261,13 +269,11 @@ footer {
 }
 
 .speakers img {
-  /* height: 120px; */
   aspect-ratio: auto;
   width: 120px;
 }
 
 .speaker {
-  /* height: 110px; */
   aspect-ratio: auto;
   position: relative;
   width: 20%;
@@ -389,6 +395,10 @@ footer {
 
   .speakers button {
     display: none;
+  }
+
+  .hidden {
+    display: flex;
   }
 
   .intro button {

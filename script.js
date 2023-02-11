@@ -2,6 +2,8 @@ const hamburgerBtn = document.getElementById('hamburgerBtn');
 const closeBtn = document.getElementById('close');
 const mobileMenu = document.getElementById('mobile-menu');
 const speakers = document.getElementById('speaker-container');
+// const speaker = document.getElementById('speaker-item');
+const moreBtn = document.getElementById('more-btn');
 
 hamburgerBtn.addEventListener('click', () => {
   if (mobileMenu.style.display === 'none') {
@@ -69,13 +71,17 @@ const speakersObj = [
   },
 ];
 
+const minimizeBtn = document.createElement('button');
+minimizeBtn.className = 'minimize';
+
 for (let i = 0; i < speakersObj.length; i += 1) {
-  speakers.innerHTML += `
-  <div class="speaker-item">
+  const divSpeaker = document.createElement('div');
+  divSpeaker.classList = 'speaker-item';
+  divSpeaker.innerHTML += `
     <div class="speaker">
                 <img class="desktop-img" src="images/speakers/image-bg-desk.png">
-                <img class="img-two" src="images/speakers/image-bg.png">  
-                <img class="img-one" src="${speakersObj[i].image}">             
+                <img class="img-two" src="images/speakers/image-bg.png">
+                <img class="img-one" src="${speakersObj[i].image}">
             </div>
 
             <div class="right-side">
@@ -84,11 +90,29 @@ for (let i = 0; i < speakersObj.length; i += 1) {
                     <p style="color: #ec5242">${speakersObj[i].job_post}</p>
                 </div>
                 <hr>
-                <div>                    
-                    <p>${speakersObj[i].bio}</p>           
+                <div>
+                    <p>${speakersObj[i].bio}</p>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>        
             `;
+  speakers.appendChild(divSpeaker);
+
+  if (i >= 2) {
+    // divSpeaker.classList = 'speaker-item hidden';
+    divSpeaker.style.display = 'none';
+    moreBtn.addEventListener('click', () => {
+      divSpeaker.style.display = 'flex';
+      minimizeBtn.innerHTML = 'MINIMIZE <i class="fa fa-angle-up"> </i>';
+      speakers.appendChild(minimizeBtn);
+      moreBtn.style.display = 'none';
+    });
+  }
+  if (i >= 2) {
+    minimizeBtn.addEventListener('click', () => {
+      divSpeaker.style.display = 'none';
+      minimizeBtn.style.display = 'none';
+      moreBtn.style.display = 'block';
+    });
+  }
 }
