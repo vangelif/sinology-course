@@ -291,7 +291,6 @@ footer {
 }
 
 .speaker > .img-one {
-  /* height: 90px; */
   aspect-ratio: auto;
   width: 90px;
   position: absolute;
@@ -310,7 +309,7 @@ footer {
 }
 
 .speaker-item .right-side div h4 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .speaker-item .right-side hr {
@@ -319,7 +318,7 @@ footer {
 }
 
 .speaker-item .right-side div p {
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .partner {
