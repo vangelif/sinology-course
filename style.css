@@ -130,8 +130,29 @@ footer {
   padding: 5% 3%;
 }
 
+.speakers button {
+  width: 90vw;
+  margin: 5% 5%;
+  padding: 3% 1%;
+  border: 2px solid #d3d3d3;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.speakers div button {
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 550;
+  text-align: center;
+}
+
 .program > ul > li > button {
   padding-block: 3% 3%;
+  color: white;
+  background-color: #ec5242;
+  border: none;
+  width: 85%;
+  align-self: center;
 }
 
 .program > ul > li > p {
@@ -212,30 +233,6 @@ footer {
 .program > ul > li > h3 {
   width: 30%;
   color: #ec5242;
-}
-
-.speakers button {
-  width: 90vw;
-  margin: 5% 5%;
-  padding: 3% 1%;
-  border: 2px solid #d3d3d3;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.speakers div button {
-  background-color: transparent;
-  font-size: 13px;
-  font-weight: 550;
-  text-align: center;
-}
-
-.program > ul > li > button {
-  color: white;
-  background-color: #ec5242;
-  border: none;
-  width: 85%;
-  align-self: center;
 }
 
 .speakers {
@@ -598,4 +595,3 @@ footer {
     font-weight: 350;
   }
 }
-
