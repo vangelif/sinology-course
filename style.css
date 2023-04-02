@@ -130,6 +130,10 @@ footer {
   padding: 5% 3%;
 }
 
+.program > ul > li > button {
+  padding-block: 3% 3%;
+}
+
 .program > ul > li > p {
   width: 60%;
 }
@@ -215,11 +219,14 @@ footer {
   margin: 5% 5%;
   padding: 3% 1%;
   border: 2px solid #d3d3d3;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .speakers div button {
   background-color: transparent;
   font-size: 13px;
+  font-weight: 550;
   text-align: center;
 }
 
@@ -591,3 +598,4 @@ footer {
     font-weight: 350;
   }
 }
+
