@@ -130,6 +130,31 @@ footer {
   padding: 5% 3%;
 }
 
+.speakers button {
+  width: 90vw;
+  margin: 5% 5%;
+  padding: 3% 1%;
+  border: 2px solid #d3d3d3;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.speakers div button {
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 550;
+  text-align: center;
+}
+
+.program > ul > li > button {
+  padding-block: 3% 3%;
+  color: white;
+  background-color: #ec5242;
+  border: none;
+  width: 85%;
+  align-self: center;
+}
+
 .program > ul > li > p {
   width: 60%;
 }
@@ -210,27 +235,6 @@ footer {
   color: #ec5242;
 }
 
-.speakers button {
-  width: 90vw;
-  margin: 5% 5%;
-  padding: 3% 1%;
-  border: 2px solid #d3d3d3;
-}
-
-.speakers div button {
-  background-color: transparent;
-  font-size: 13px;
-  text-align: center;
-}
-
-.program > ul > li > button {
-  color: white;
-  background-color: #ec5242;
-  border: none;
-  width: 85%;
-  align-self: center;
-}
-
 .speakers {
   background-color: white;
   margin-top: 50px;
@@ -253,6 +257,14 @@ footer {
   margin-top: 20px;
 }
 
+.displayed {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
 .speaker-item {
   display: flex;
   flex-direction: row;
@@ -261,13 +273,11 @@ footer {
 }
 
 .speakers img {
-  /* height: 120px; */
   aspect-ratio: auto;
   width: 120px;
 }
 
 .speaker {
-  /* height: 110px; */
   aspect-ratio: auto;
   position: relative;
   width: 20%;
@@ -285,7 +295,6 @@ footer {
 }
 
 .speaker > .img-one {
-  /* height: 90px; */
   aspect-ratio: auto;
   width: 90px;
   position: absolute;
@@ -304,7 +313,7 @@ footer {
 }
 
 .speaker-item .right-side div h4 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .speaker-item .right-side hr {
@@ -313,7 +322,7 @@ footer {
 }
 
 .speaker-item .right-side div p {
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .partner {
@@ -389,6 +398,10 @@ footer {
 
   .speakers button {
     display: none;
+  }
+
+  .hidden {
+    display: flex;
   }
 
   .intro button {
