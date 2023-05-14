@@ -37,18 +37,18 @@ footer {
 }
 
 footer .left-side i {
-  font-size: 18px;
+  font-size: 30px;
 }
 
 footer .left-side aside {
-  font-size: 17px;
+  font-size: 25px;
   font-weight: 700;
   float: right;
   line-height: 60%;
 }
 
 footer .right-side {
-  font-size: 9px;
+  font-size: 15px;
   font-weight: 350;
 }
 
@@ -147,13 +147,13 @@ footer .right-side {
 .current > p {
   padding: 2% 8%;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 30px;
 }
 
 .past > p {
   /* padding: 3% 2% 6% 2%; */
   font-weight: 350;
-  font-size: 13px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
@@ -167,12 +167,12 @@ footer .right-side {
 }
 
 .intro > .intro-top > p {
-  font-size: 19px;
+  font-size: 30px;
 }
 
 .intro > .intro-top > h1 {
   font-weight: 900;
-  font-size: 32px;
+  font-size: 80px;
 }
 
 .intro > .intro-mid {
@@ -184,7 +184,7 @@ footer .right-side {
 .intro > .intro-bottom {
   padding: 5% 10%;
   padding-bottom: 50px;
-  font-size: 12px;
+  font-size: 25px;
 }
 
 .intro > .intro-bottom > aside {
@@ -202,6 +202,7 @@ footer .right-side {
 
 .current h3 {
   padding: 2% 3%;
+  font-size: 50px;
 }
 
 .current img {
@@ -256,6 +257,7 @@ footer .right-side {
   margin-bottom: 20px;
   font-weight: 500;
   padding-top: 20px;
+  font-size: 50px;
 }
 
 .past hr {
@@ -294,7 +296,7 @@ footer .right-side {
 }
 
 .past .abc::after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
@@ -313,7 +315,7 @@ footer .right-side {
 }
 
 .partner div ul li i {
-  font-size: 15px;
+  font-size: 30px;
   height: 40px;
   color: white;
 }
@@ -331,11 +333,11 @@ footer .right-side {
 
   .topbar a {
     color: white;
-    font-size: 15px;
+    font-size: 35px;
   }
 
   .topbar a i {
-    font-size: 15px;
+    font-size: 25px;
   }
 
   .navigation {
@@ -362,6 +364,7 @@ footer .right-side {
     width: 100%;
     justify-content: flex-end;
     align-items: center;
+    font-size: 35px;
   }
 
   .navigation div ul button {
